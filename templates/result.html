@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultat</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Résultat de la prédiction</h2>
+    <div class="result-container">
+        <img src="{{ image_url }}" alt="Image radiographie" width="300">
+        <p>Classe prédite : <strong>{{ label }}</strong></p>
+        <p>Précision : <strong>{{ accuracy }}%</strong></p>
+        <a href="/">Revenir à l'accueil</a>
+    </div>
+</body>
+</html>
